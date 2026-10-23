@@ -1,0 +1,5 @@
+.uj-showcase .uj-showcase__card > .components-base-control { width: 100%; }
+.uj-showcase .uj-showcase__actions { display: flex; gap: 6px; flex-wrap: wrap; margin-top: auto; }
+.uj-showcase .uj-showcase__add { margin-top: 20px; }
+.uj-showcase .components-base-control__label { color: #142b3b; font-size: 12px; font-weight: 600; }
+.uj-showcase .components-textarea-control__input { min-height: 110px; }

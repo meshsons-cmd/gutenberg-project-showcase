@@ -1,0 +1,31 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "umesh/project-showcase",
+  "version": "1.0.0",
+  "title": "Project Showcase",
+  "category": "widgets",
+  "icon": "portfolio",
+  "description": "Display a responsive collection of project cards.",
+  "keywords": ["portfolio", "projects", "case study"],
+  "textdomain": "umesh-project-showcase",
+  "attributes": {
+    "heading": { "type": "string", "default": "Selected engineering work" },
+    "intro": { "type": "string", "default": "A collection of development projects and technical contributions." },
+    "columns": { "type": "number", "default": 3 },
+    "showTags": { "type": "boolean", "default": true },
+    "projects": {
+      "type": "array",
+      "default": [
+        { "title": "Commerce experience", "description": "Describe the customer problem, your contribution and the result.", "tags": "WordPress, WooCommerce, PHP", "url": "" },
+        { "title": "Custom editor blocks", "description": "Explain how your block improves the content editing workflow.", "tags": "Gutenberg, React, JavaScript", "url": "" },
+        { "title": "Application development", "description": "Highlight a feature you built and the engineering choices behind it.", "tags": "Laravel, Livewire, MySQL", "url": "" }
+      ]
+    }
+  },
+  "supports": { "html": false, "align": ["wide", "full"], "anchor": true },
+  "editorScript": "file:./editor.js",
+  "style": "file:./style.css",
+  "editorStyle": "file:./editor.css",
+  "render": "file:./render.php"
+}
